@@ -4,4 +4,4 @@ COPY . .
 
 RUN ["npm", "install"]
 
-RUN ["npx", "ava", "src/"]
+CMD ["npx", "ava", "src/", "--timeout=30s"]
